@@ -1,6 +1,6 @@
 body {
     position: relative;
-    font-family: "Arial Black";
+    font-family:'Courier New', Courier, monospace;
     background-color: #0F0E26;
     margin: 0;
 }
@@ -144,10 +144,6 @@ article img {
    float: right;
    cursor:cell;
 }
-
-/* article img:hover{
-	
-} */
 
 .driverimg {
    width: auto;

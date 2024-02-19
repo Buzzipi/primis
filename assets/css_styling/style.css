@@ -1,6 +1,6 @@
 body {
 
-    font-family: "Arial Black";
+    font-family:'Courier New', Courier, monospace;
     background-color: #0F0E26;
     margin: 0;
 }
@@ -37,9 +37,17 @@ body {
     z-index:-1;
 }
 
+
+@keyframes textAnimation {
+  0% { transform: translateY(-100%); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+
 .nav {
 z-index: 1;
 }
+
 
 .nav a {
 	float: center;
@@ -48,9 +56,10 @@ z-index: 1;
 	text-decoration: none;
 	font-size: 28px; 
 	padding: 10px; 	
-    font-family: "Impact";
-    animation: glow 1s ease-in-out infinite alternate;
+  font-family: "Impact";
 }  
+
+
 .nav a.active { 
 	border-bottom: 6px solid white; /* adds a border just to the bottom, I use this instead of underlining because I think it looks better than the default underline */
     
@@ -88,7 +97,7 @@ p {
     background: rgba(red, green, blue, 0.2);
     width: 450px;
     float: left;
-    font-size: 30px;
+    font-size: 30px;    
 }
 .text-glow {
     
@@ -98,38 +107,11 @@ p {
 	animation: glow 1s ease-in-out infinite alternate;
 }
 
-@keyframes fadein {
-	from { opacity: 0}
-	to   { opacity: 1}
-}
-@keyframes glow {
-    from{
-      text-shadow: 0 0 10px #f00, 0 0 20px #f00, 0 0 30px #f00, 0 0 40px #f00,0 0 50px #f00;
-    }
-    to {
-      text-shadow: 0 0 60px #f00, 0 0 70px #f00;
-    }
-  
-  }
 
-  #pot {
-    bottom: 93%;
-    right: 200px;
-    position: absolute;
-    -webkit-animation: linear infinite;
-    -webkit-animation-name: run;
-    -webkit-animation-duration: 15s;
-  }
-  @-webkit-keyframes run {
-    0% {
-      left: 0;
-    }
-    50% {
-    
-      left: 100%;
-    }
-    100% {
-      left: 0;    
-      transform: scaleX(-1);
-    }
-  }
+
+
+
+
+.touge_pictures {
+  align-content: left 5px;
+}
