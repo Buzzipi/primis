@@ -1,8 +1,15 @@
 body {
-
     font-family:'Courier New', Courier, monospace;
     background-color: #0F0E26;
     margin: 0;
+    
+      margin: 0;
+      padding: 0;
+      /* properties for background */
+      background-image: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.wallpapersafari.com%2F98%2F26%2FmvKlqw.jpg&f=1&nofb=1&ipt=336f94f84b53633d5039f297a14846cef2022c48b1524e7fe0a83029570a8a1a&ipo=images'); /* Replace 'your-image.jpg' with the path to your image */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
 }
 .container {
 
@@ -26,15 +33,11 @@ body {
     
 }
 .backdrop {
-    position:relative;
-    left:-610px;
-    
-    top:-550px;
-    display: flex;
-	
-    transform: scale(0.7);
-    opacity: 0.5;
-    z-index:-1;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 
@@ -54,6 +57,13 @@ z-index: 1;
 	color: #f2f2f2; /* White/gray colour for the visted navbar links */
 	text-align: center;
 	text-decoration: none;
+
+  text-shadow:  
+  -1px -1px 0 #000,  
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+
 	font-size: 28px; 
 	padding: 10px; 	
   font-family: "Impact";
@@ -85,7 +95,7 @@ p {
 #content {
     float: center;
     
-    background: rgba(red, green, blue, 0.2);
+    /* background: rgba(red, green, blue, 0.2); */
     width: 850px;
     color: white;
     font-size: 16px;
@@ -114,4 +124,22 @@ p {
 
 .touge_pictures {
   align-content: left 5px;
+}
+
+#links{
+  text-shadow:  
+  -1px -1px 0 #000,  
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+}
+
+#sidebar {
+	background-color:black;
+	width:30%;
+	height:100%;
+	float:left;
+	margin:100px -100px 100px 0px;
+	padding:10px;
+  background: rgba(0,0,0,0.5);
 }
