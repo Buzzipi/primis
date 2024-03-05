@@ -69,14 +69,11 @@ p {
     width: 1300px;
 }
 
-#content {
+#text_main_menu {
     float: center;
-    
-    /* background: rgba(red, green, blue, 0.2); */
     width: 850px;
     color: white;
     font-size: 16px;
-    
 }
 
 #leftcolumn {
@@ -109,8 +106,8 @@ p {
 
 #sidebar {
 	background-color:black;
-	width:30%;
-	height:100%;
+	width: 350px;
+	height:600px;
 	float:left;
 	margin:100px -100px 100px 0px;
 	padding:10px;
@@ -202,11 +199,32 @@ p {
   background-size: cover;
 }
 
-/* #content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  z-index: 1;
-} */
+
+
+
+/* screen layout for different devices */
+
+/* phone */
+@media (min-width:320px)  { 
+  #sidebar {
+    background-color:black;
+    width: 1000px;
+    height:1000px;
+    float:left;
+    margin:100px -100px 100px 0px;
+    padding:10px;
+    background: rgba(0,0,0,0.5);
+  }
+}
+
+/* ipad / big phones */
+@media (min-width:641px)  { 
+
+}
+
+/*small laptops / big ipads*/
+@media (min-width:961px)  { 
+
+}
+
+
